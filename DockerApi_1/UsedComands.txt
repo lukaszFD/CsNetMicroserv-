@@ -1,0 +1,9 @@
+cd C:\Users\Luc\Documents\GitHub\CsNetMicroservices
+dotnet new webapi -n DockerApi_1
+ls
+code -r DockerApi_1
+dotnet build   
+dotnet run   
+docker --version
+docker build -t lukaszfd/dockerapi_1 .
+docker run -p 8080:80 lukaszfd/dockerapi_1
